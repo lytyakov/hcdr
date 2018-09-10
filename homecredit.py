@@ -32,7 +32,7 @@ class HomeCreditDataTable:
             self._target = self._target[self._train]
         else:
             self._train = self._data.index.tolist()     
-    @data.deleter
+    @data.deleter 
     def data(self):        
         self._data = None
         self._train = None
